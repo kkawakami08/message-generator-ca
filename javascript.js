@@ -9,9 +9,6 @@ const billieSongs = [
   "My Future",
   "When the Party's Over",
   "Oxytocin",
-  "Your Power",
-  "Bad Guy",
-  "Happier Than Ever",
 ];
 
 const oliviaSongs = [
@@ -20,11 +17,6 @@ const oliviaSongs = [
   "1 Step Forward, 3 Steps Back",
   "Jealousy Jealousy",
   "Happier",
-  "Enough for You",
-  "Traitor",
-  "Driver's License",
-  "Deja vu",
-  "Good 4 U",
 ];
 
 const harrySongs = [
@@ -33,9 +25,34 @@ const harrySongs = [
   "As It Was",
   "Late Night Talking",
   "Golden",
-  "Matilda",
-  "She",
-  "Music For a Sushi Restaurant",
-  "Cherry",
-  "Ever Since New York",
 ];
+
+const songGenerator = (artistArray) => {
+  //let randomArtist = Math.round(Math.random() * 2);
+  let randomArtist = 0;
+  let randomSong = Math.round(Math.random() * 4);
+  switch (randomArtist) {
+    case 0:
+      artist.textContent = "Olivia Rodrigo";
+      switch (randomSong) {
+        case 0:
+          song.textContent = oliviaSongs[0];
+          break;
+        case 1:
+          song.textContent = oliviaSongs[1];
+          break;
+        case 2:
+          song.textContent = oliviaSongs[2];
+          break;
+        case 3:
+          song.textContent = oliviaSongs[3];
+          break;
+        case 4:
+          song.textContent = oliviaSongs[4];
+          break;
+      }
+      break;
+  }
+};
+
+songGenerator(artistArray);
