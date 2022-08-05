@@ -1,9 +1,9 @@
-#Message Generator Program
+# Message Generator Program
 
-##Overview
+## Overview
 Every time a user runs the program, they receive a new randomized output.
 
-##Skill Focus
--Javascript
--Git version control
--Markdown in README
+## Skill Focus
+- Javascript
+- Git version control
+- Markdown in README
