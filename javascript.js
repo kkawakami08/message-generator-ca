@@ -28,8 +28,7 @@ const harrySongs = [
 ];
 
 const songGenerator = (artistArray) => {
-  //let randomArtist = Math.round(Math.random() * 2);
-  let randomArtist = 0;
+  let randomArtist = Math.round(Math.random() * 2);
   let randomSong = Math.round(Math.random() * 4);
   switch (randomArtist) {
     case 0:
@@ -49,6 +48,48 @@ const songGenerator = (artistArray) => {
           break;
         case 4:
           song.textContent = oliviaSongs[4];
+          break;
+      }
+      break;
+
+    case 1:
+      artist.textContent = "Billie Eilish";
+      switch (randomSong) {
+        case 0:
+          song.textContent = billieSongs[0];
+          break;
+        case 1:
+          song.textContent = billieSongs[1];
+          break;
+        case 2:
+          song.textContent = billieSongs[2];
+          break;
+        case 3:
+          song.textContent = billieSongs[3];
+          break;
+        case 4:
+          song.textContent = billieSongs[4];
+          break;
+      }
+      break;
+
+    case 2:
+      artist.textContent = "Harry Styles";
+      switch (randomSong) {
+        case 0:
+          song.textContent = harrySongs[0];
+          break;
+        case 1:
+          song.textContent = harrySongs[1];
+          break;
+        case 2:
+          song.textContent = harrySongs[2];
+          break;
+        case 3:
+          song.textContent = harrySongs[3];
+          break;
+        case 4:
+          song.textContent = harrySongs[4];
           break;
       }
       break;
